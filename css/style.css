@@ -153,13 +153,12 @@ body{
 .banner-item .banner-img .overlay img{
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .banner-item .banner-img:hover .overlay{
     transform: scale(1);
 }
-
-
 
 /* banner part css :end======================= =======================================================*/
 
