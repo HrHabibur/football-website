@@ -125,13 +125,41 @@ body{
 
 .banner-item .banner-img{
     width: 50%;
+    position: relative;
 }
+
 .banner .banner-item .banner-img img{
     width: 560px;
     height: 440px;
     display: block;
     margin-left: auto;
+    transition: all .4s ease-in;
 }
+
+.banner-item .banner-img:hover > img{
+    transform: scale(0);
+}
+
+.banner-item .banner-img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all .4s ease-in .2s;
+}
+
+.banner-item .banner-img .overlay img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-item .banner-img:hover .overlay{
+    transform: scale(1);
+}
+
+
 
 /* banner part css :end======================= =======================================================*/
 
